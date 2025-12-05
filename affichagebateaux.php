@@ -198,7 +198,7 @@
           <div class="w-100 h-50">
             <div class="card h-100 shadow-sm d-flex flex-row" style="height: 150px;">
               <div style="flex: 1 1 40%;">
-                <img src="photo et logo/<?= htmlspecialchars($ligne['image']) ?>"  class="img-fluid h-100" style="object-fit: cover; border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;"  alt="Image du vol">
+                <img src="./<?= htmlspecialchars($ligne['image']) ?>"  class="img-fluid h-100" style="object-fit: cover; border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;"  alt="Image du vol">
               </div>
               <div class="card-body" style="flex: 1 1 auto;">
                 <h3 class="card-title"><?= htmlspecialchars($ligne["Destination"]) ?></h3>
@@ -232,4 +232,5 @@
       }
     }
   </script>
+
 </body>
