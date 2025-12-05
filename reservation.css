@@ -1,0 +1,133 @@
+.navbar {
+    background-color:  #003366; /* Bleu ciel */
+    display: flex;
+    justify-content: space-between; /* space between: logo يسار، menu يمين */
+    align-items: center;
+   
+    margin: 0px 0px;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  
+}
+
+.logo img {
+    /* تتحكم في حجم اللوغو */
+   
+
+    width: 100px;
+    
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    color: #56ABD9;
+}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 8%;
+        }
+
+        .form-container2, .vol-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 48%;
+        }
+
+        .form-container2 input,
+        .form-container2 select,
+        .form-container2 textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .form-container2 button {
+            width: 100%;
+            padding: 10px;
+            background-color:#003366;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .form-container2 button:hover {
+            background-color: #0056b3;
+        }
+
+        .vol-info h3 {
+            text-align: center;
+            color: #333;
+        }
+
+        .vol-info p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .vol-info img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            margin: 20px auto;
+        }
+        .social-icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin: 0 10px;
+       }
+.social-section h3{
+        color:white;
+       }
+.social-section a :hover{
+        color:#56ABD9;
+}
+.social-section {
+    text-align: center;
+    background-color: #003366;
+    height: 150px;
+    box-shadow: 0 4px 10px white;
+    width: 100%;
+    margin-top: 300px;
+}

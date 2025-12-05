@@ -1,0 +1,303 @@
+/* Styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Menu en haut */
+.navbar {
+    background-color:  #003366; /* Bleu ciel */
+    display: flex;
+    justify-content: space-between; /* space between: logo يسار، menu يمين */
+    align-items: center;
+   
+    margin: 0px 0px;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  
+}
+
+.logo img {
+    /* تتحكم في حجم اللوغو */
+   
+
+    width: 100px;
+    
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    color: #56ABD9;
+}
+
+
+
+/* Section principale avec fond d'image */
+.main-section {
+    background-image: url('photo et logo/bk14.jpg');
+  background-size: cover; /* تغطي الشاشة كلها */
+  background-position: center; /* تركز الصورة فالنص */
+  background-repeat: no-repeat; /* ما تعاودش */
+    height:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.main-section .content {
+    float: left;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 415px;
+    text-align: center; /* كيدير كلشي لي داخل وسط */ 
+}
+
+.main-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #00aaff; /* Bleu ciel */
+}
+
+.main-section p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.contact-button {
+    background-color: #003366; /* Bleu marin */
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+.contact-button:hover {
+    background-color: #56ABD9; /* Bleu ciel */
+}
+
+/* Section contact */
+.contact-section {
+   
+    padding: 50px;
+    background-color:white; /* Beige */
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #003366; /* Bleu marin */
+}
+
+.contact-section p {
+    font-size: 18px;
+    color: #003366; /* Bleu marin */
+}
+.social-icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin: 0 10px;
+       }
+.social-section h3{
+        color:white;
+       }
+.social-section a :hover{
+        color:#56ABD9;
+}
+.social-section {
+    text-align: center;
+    background-color: #003366;
+    height: 150px;
+    box-shadow: 0 4px 10px white;
+    width: 100%;
+    margin-top: 300px;
+}
+.cards-container {
+    display: flex;
+    justify-content: space-between; /* باش تكون المسافة بين الكارتات متساوية */
+    flex-wrap: wrap; /* إذا كان عندك أكثر من 3 كارتات، تقدر تتحرك للأعلى */
+    gap: 10px; /* المسافة بين كل كارتة والأخرى */
+    margin-top: 0px; /* اختيارية */
+    margin-top: 50px; /* اختيارية */
+    position: relative; /* باش يكون الكارت فوق الخلفية */
+    z-index: 1; /* جعل الكارت فوق الخلفية */
+}
+
+.cart {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 300px; /* عرض ثابت لجميع الكارتات */
+    height: 500px; /* ارتفاع ثابت لجميع الكارتات */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden; /* باش ما تخرجش الصورة أو المحتوى برا الكارت */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 50px; /* لضبط المحتوى داخل الكارت */
+}
+
+.cart img {
+    width: 100%;
+    height: 150px; /* تحديد ارتفاع الصورة */
+    object-fit: cover; /* باش الصورة تملأ المساحة دون تشويه */
+    border-radius: 8px; /* إذا بغيت زوايا مدورة للصورة */
+}
+
+.cart h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.cart p {
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+.cart .price {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.cart button {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.cart button:hover {
+    background-color: #0055a5; /* تغيير اللون عند التمرير */
+}
+/* تصميم الحاوية للنموذج */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;/* المسافة من الأعلى */
+    padding: 10px;
+}
+
+/* تصميم حقل الإدخال */
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px; /* تحديد العرض */
+    border: 2px solid #003366; /* حدود الحقل */
+    border-radius: 5px; /* تدوير الحواف */
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* تغيير لون الحافة عند التركيز */
+input[type="text"]:focus {
+    border-color: #0055a5; /* تغيير لون الحافة عند التركيز */
+}
+
+/* تصميم الزر */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #003366; /* اللون الأزرق */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* المسافة بين الحقل والزر */
+    transition: background-color 0.3s ease;
+}
+
+/* تغيير لون الزر عند التمرير عليه */
+button:hover {
+    background-color: #0055a5; /* تغير اللون عند التمرير */
+}
+
+/* تصميم الرسالة إذا لم توجد نتائج */
+.no-results {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;/* المسافة من الأعلى */
+    padding: 10px;
+    top :20%
+}
+
+/* تصميم حقل الإدخال */
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px; /* تحديد العرض */
+    border: 2px solid #003366; /* حدود الحقل */
+    border-radius: 5px; /* تدوير الحواف */
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* تغيير لون الحافة عند التركيز */
+input[type="text"]:focus {
+    border-color: #0055a5; /* تغيير لون الحافة عند التركيز */
+}
+
+/* تصميم الزر */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #003366; /* اللون الأزرق */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* المسافة بين الحقل والزر */
+    transition: background-color 0.3s ease;
+}
+
+/* تغيير لون الزر عند التمرير عليه */
+button:hover {
+    background-color: #0055a5; /* تغير اللون عند التمرير */
+}
